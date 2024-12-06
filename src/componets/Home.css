@@ -1,0 +1,29 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
+    background: url('/src/assets/b3ad73c68dec13695a38de5d456036b0\ \(2\).jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.buttonStart {
+    all: unset; 
+    padding: 15px 35px; /* Tamaño del botón */
+    font-size: 30px; /* Tamaño del texto */
+    background-color: #5b191d; /* Color de fondo del botón */
+    color: #eadfd2; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.buttonStart:hover {
+    background-color: #6E3133; /* Color de fondo al pasar el mouse */
+}
+
+.link {
+    text-decoration: none;
+}

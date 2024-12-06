@@ -1,6 +1,13 @@
+import { Link } from 'react-router-dom';
+import './Home.css'
+
 const Home  = () => {
     return (
-        <button className="buttonStart"> Inciar partida </button>
+        <div className="Container"> 
+            <Link className='link' to='/game'>
+                <button className="buttonStart"> Inciar partida </button>
+            </Link>
+        </div>
     )
 }
 export default Home;
