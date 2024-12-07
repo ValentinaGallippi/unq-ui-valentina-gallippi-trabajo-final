@@ -1,0 +1,12 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Siempre 4 columnas */
+    grid-gap: 10px;
+    width: min(90vw, 500px); /* El ancho máximo será 400px, ajustable al tamaño de la pantalla */
+    height: auto; /* Altura dinámica */
+    margin: auto;
+    position: absolute; /* Posición absoluta para centrar */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado total */
+}
