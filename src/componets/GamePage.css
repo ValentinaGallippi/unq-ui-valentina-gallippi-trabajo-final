@@ -1,0 +1,38 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    align-items: center;
+}
+
+.modal-content button {
+    all: unset; 
+    padding: 5px 15px; /* Tamaño del botón */
+    font-size: 30px; /* Tamaño del texto */
+    background-color: #5b191d; /* Color de fondo del botón */
+    color: #eadfd2; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 7px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+    gap: 10px;
+}
+
+.modal-content button:hover {
+    background-color: #6E3133; /* Color de fondo al pasar el mouse */
+}
+

@@ -1,11 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import './Board.css';
 import MemoBlock from './MemoBlocks';
+import { useEffect } from 'react';
 
 const Board = ({animating, handleMemoClick, memoBlocks}) => {
+
     return (
         <main className="board">
             {memoBlocks.map( (memoBlock, i) => {
-                return <MemoBlock key={`${i}_${memoBlock.emoji}`} animating={animating} handleMemoClick={handleMemoClick} memoBlock={memoBlock} />
+                return <MemoBlock key={`${i}_${memoBlock.image}`} animating={animating} handleMemoClick={handleMemoClick} memoBlock={memoBlock} />
             })}
         </main>
     );
