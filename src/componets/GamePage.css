@@ -32,7 +32,29 @@
     gap: 10px;
 }
 
+
+.boton{
+    all: unset; 
+    padding:5px 5px; /* Tamaño del botón */
+    font-size: 20px; /* Tamaño del texto */
+    background-color: #5b191d; /* Color de fondo del botón */
+    color: #eadfd2; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 7px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
 .modal-content button:hover {
     background-color: #6E3133; /* Color de fondo al pasar el mouse */
 }
 
+.img {
+    position: fixed; /* Cambiado de absolute a fixed para evitar que dependa del contenedor */
+    bottom: 5%; /* Más cerca del borde inferior */
+    right: 2%; /* Bien pegado al borde izquierdo */
+    width: 25vw; /* Un cuarto del ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen mantenga sus proporciones */
+    z-index: 1; /* Debajo del modal pero sobre otros elementos si es necesario */
+}

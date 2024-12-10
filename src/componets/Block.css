@@ -1,10 +1,10 @@
-.memo-block {
+.block {
     cursor: pointer;
     aspect-ratio: 1 / 1;
     width: 100%; /* Ocupa todo el espacio asignado en la grilla */
 }
 
-.memo-block-front, .memo-block-back , .image{
+.block-front, .block-back , .image{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -13,7 +13,7 @@
     border-radius: 4px;
 }
   
-.memo-block-inner {
+.block-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -22,11 +22,11 @@
     transform-style: preserve-3d;
 }
 
-.memo-block-flipped {
+.block-flipped {
     transform: rotateY(180deg);
 }
 
-.memo-block-back  {
+.block-back  {
     /* background-color: #7f0b0d; */
     transform: rotateY(180deg);
     box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 50%);
@@ -37,7 +37,7 @@
     border-radius: 50%; 
 }
 
-.memo-block-front {
+.block-front {
     background: url('/src//assets/9517ca85ea0f590f66ce7583bb3c2991.jpg');
     background-size: cover;
     background-position: center;

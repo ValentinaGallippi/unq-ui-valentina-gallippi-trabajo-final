@@ -1,7 +1,4 @@
 .board {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Siempre 4 columnas */
-    grid-gap: 10px;
     width: min(90vw, 500px); /* El ancho máximo será 400px, ajustable al tamaño de la pantalla */
     height: auto; /* Altura dinámica */
     margin: auto;

@@ -1,11 +1,25 @@
 .Container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
     height: 100vh; /* Hace que ocupe toda la altura de la pantalla */
     background: url('/src/assets/b3ad73c68dec13695a38de5d456036b0\ \(2\).jpg');
     background-size: cover;
     background-position: center;
+    /* justify-content: space-evenly; */
+}
+
+.containerSelect{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-evenly;
+}
+
+.span {
+    color:#5b191d;
+    font-size: 25px;
 }
 
 .buttonStart {
@@ -24,6 +38,13 @@
     background-color: #6E3133; /* Color de fondo al pasar el mouse */
 }
 
-.link {
-    text-decoration: none;
+.title {
+    gap: 30px;
+}
+
+
+.span1 {
+    color:#5b191d;
+    top: 2%;
+    font-size: 15px;
 }

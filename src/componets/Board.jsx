@@ -1,16 +1,21 @@
 import { useNavigate } from 'react-router-dom';
 import './Board.css';
-import MemoBlock from './MemoBlocks';
+import Block from './Block';
 import { useEffect } from 'react';
 
-const Board = ({animating, handleMemoClick, memoBlocks}) => {
+const Board = ({animating, handleMemoClick, blocks, size}) => {
 
     return (
-        <main className="board">
-            {memoBlocks.map( (memoBlock, i) => {
-                return <MemoBlock key={`${i}_${memoBlock.image}`} animating={animating} handleMemoClick={handleMemoClick} memoBlock={memoBlock} />
+        <div className="board"
+        style={{
+            display: "grid",
+            gridTemplateColumns:`repeat(${size.size}, 1fr)`,
+            gap: "3px",
+          }}>
+            {blocks.map( (block, i) => {
+                return <Block key={`${i}_${block.image}`} animating={animating} handleMemoClick={handleMemoClick} block={block} />
             })}
-        </main>
+        </div>
     );
 }
 
